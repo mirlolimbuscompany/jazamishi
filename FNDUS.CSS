@@ -1,0 +1,270 @@
+/* FONTS */
+@font-face {
+  font-family: 'arch';
+  src: url(fonts/ArchivoBlack-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'arimo';
+  src: url(fonts/Arimo-VariableFont_wght.ttf) format('truetype');
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'jack';
+  overflow-x: hidden;
+}
+
+.left-bar {
+  position: fixed;     /* stays on the left, does not affect layout */
+  left: 0;             /* touches the left edge of the screen */
+  top: 50%;            /* centered vertically */
+  transform: translateY(-50%);
+
+  width: 40px;         /* thin */
+  height: 810px;       /* long — adjust as you want */
+
+  background-color: #5a3e32;
+  border-radius: 50px;
+  z-index: 9999;       /* stays above everything */
+  pointer-events: none; /* makes sure it never blocks clicks */
+}
+
+.right-bar {
+  position: fixed;     /* stays on the left, does not affect layout */
+  right: 0;             /* touches the left edge of the screen */
+  top: 50%;            /* centered vertically */
+  transform: translateY(-50%);
+
+  width: 40px;         /* thin */
+  height: 810px;       /* long — adjust as you want */
+
+  background-color: #5a3e32;
+  border-radius: 50px;
+  z-index: 9999;       /* stays above everything */
+  pointer-events: none; /* makes sure it never blocks clicks */
+}
+
+
+/* NAVBAR */
+.navbar {
+  background-color: #573f35;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  width: 90px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-family: 'arch';
+  font-size: 22px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: .3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #b69579;
+  color: #573f35;
+}
+
+body {
+    background-color: #f4e8d8;
+}
+
+
+.findus {
+  position: relative;
+  width: 100%;
+  padding: 160px 60px;
+  min-height: 700px; /* FIXED */
+}
+
+/* 👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍👍 */
+.right-containers {
+    position: absolute;
+    right: 145px;
+    top: 40%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container1, .container2 {
+
+    width: 430px;
+    height: 170px;
+    background-color: #b69579;
+    border: 1px solid #5a3e32;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "arch";
+    color: #b69579;
+}
+
+.container1 p, .container2 p {
+    color: #fef8ee;
+    text-align: center;
+}
+
+.container1 i, .container2 i {
+    margin-right: 30px;
+    color: #fef8ee;
+    font-size: 45px;
+}
+
+.container1 p, .container2 p {
+    margin: 0;
+    font-size: 20px;
+}
+
+.container1 a, .container2 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container3 {
+    position: absolute;
+    left: 110px;
+    top: 30%;
+    width: 447px;
+    height: 220px;
+    background-color: #b69579;
+    padding: 40px;
+    border-radius: 40px;
+    font-family: Arial, sans-serif;
+    align-items: flex-start;
+}
+
+
+.container3 p {
+  position: absolute;
+      left: 10px;
+    top: 50px;
+    color: #fef8ee;
+    margin: 0;
+    font-size: 25px;
+    line-height: 1.5;
+    font-family: "arimo";
+}
+
+
+/* Where can you find jazamishi text */
+
+.title-left {
+    position: absolute;
+    left: 150px;
+    top: 136px;
+    transform: translateY(-50%);
+    font-size: 37px;
+    font-weight: 900;
+    color: #5a3e2b;
+    font-family: "arch";
+    line-height: 1.2em;
+}
+
+.container3 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container3 a:hover {
+    opacity: 0.8;
+}
+
+/* SECOND SECTION */
+.outline {
+  position: relative;
+  width: 100%;
+  min-height: 650px;
+  padding: 80px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 80px;
+
+}
+
+
+
+.outline-text {
+  position: absolute;   /* Ensure it has a stacking context */
+  z-index: 3;           /* Make sure this is on top */
+  font-family: 'arch';
+  color: #573f35;
+  bottom: 614px;
+  left:270px;
+  font-size: 25px;
+}
+
+.box {
+  position: absolute;
+  width: 520px;
+  height: 590px;
+  background-color: #643e30;
+  border-radius: 23px;
+  z-index: 1;           /* Put this behind the stream outline */
+  left: 640px;             /* Centers the outline inside the box */
+  top: 52%;              /* Centers the outline inside the box */
+  transform: translate(-50%, -50%); /* Adjust position to center the image */
+  pointer-events: none; /* optional: so clicks pass through */
+}
+
+.stream-outline {
+  z-index: 3;   /* Ensures the stream outline stays on top */
+}
+
+.stream-outline {
+  position: absolute;
+  width: 500px;            /* Adjust width so it fits inside the box */
+  max-width: 900px;      /* Ensure it doesn't grow too large */
+  height: 530px;          /* Maintain aspect ratio */
+  z-index: 2;            /* Ensure the stream outline is above the box */
+  left: 640px;             /* Centers the outline inside the box */
+  top: 52%;              /* Centers the outline inside the box */
+  transform: translate(-50%, -50%); /* Adjust position to center the image */
+}
+
+
+body {
+    overflow-y: scroll;   /* force vertical scrollbar */
+}
+
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+

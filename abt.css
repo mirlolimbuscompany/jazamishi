@@ -1,0 +1,204 @@
+/* FONTS */
+@font-face {
+  font-family: 'arch';
+  src: url(fonts/ArchivoBlack-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'arimo';
+  src: url(fonts/Arimo-VariableFont_wght.ttf) format('truetype');
+}
+
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4e8d8;
+  font-family: 'jack';
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #573f35;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  width: 90px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-family: 'arch';
+  font-size: 22px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: .3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  background-color: #b69579;
+  color: #573f35;
+}
+
+
+.left-bar {
+  position: fixed;     /* stays on the left, does not affect layout */
+  left: 0;             /* touches the left edge of the screen */
+  top: 50%;            /* centered vertically */
+  transform: translateY(-50%);
+
+  width: 40px;         /* thin */
+  height: 810px;       /* long — adjust as you want */
+
+  background-color: #5a3e32;
+  border-radius: 50px;
+  z-index: 9999;       /* stays above everything */
+  pointer-events: none; /* makes sure it never blocks clicks */
+}
+
+.right-bar {
+  position: fixed;     /* stays on the left, does not affect layout */
+  right: 0;             /* touches the left edge of the screen */
+  top: 50%;            /* centered vertically */
+  transform: translateY(-50%);
+
+  width: 40px;         /* thin */
+  height: 810px;       /* long — adjust as you want */
+
+  background-color: #5a3e32;
+  border-radius: 50px;
+  z-index: 9999;       /* stays above everything */
+  pointer-events: none; /* makes sure it never blocks clicks */
+}
+
+.swirlleft,
+.swirlright {
+  position: fixed;  /* instead of absolute */
+}
+
+
+
+.swirlleft {
+  
+  width: 2000px;
+  height: 900px;
+  border-radius: 500px;
+  z-index: 1;
+  left: 1030px;
+  top: 60px;                 /* move it down as much as you want */
+  transform: translateX(-50%);
+  pointer-events: none;     /* optional: so clicks pass through */
+}
+
+.swirlright {
+
+  width: 2000px;
+  height: 900px;
+  border-radius: 500px;
+  z-index: 1;
+  left: 1780px;
+  top: 400px;                 /* move it down as much as you want */
+  transform: translateX(-50%);
+  pointer-events: none;     /* optional: so clicks pass through */
+}
+
+.chart {
+  width: 400px;
+  display: block;
+top: 50px;
+ left: 130px; 
+ z-index: 10000; /* chart now stays above EVERYTHING */ 
+  position: relative;
+  z-index: 10; /* keep it above background swirls */
+}
+
+.org {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+
+.slider-container {
+  position: relative;
+  width: 560px;       /* <-- change this to however wide you want */
+  height: 500px;      /* <-- fixed height so it does NOT grow */
+  overflow: hidden;
+  margin: auto;
+  margin-left: 580px;  /* Move the slider slightly to the right */
+  overflow: hidden;
+}
+
+.slider-container {
+  margin-top: -430px; /* pulls it up without extending the page */
+}
+
+
+
+.slider-image {
+  width: 100%;
+  height: 100%;       /* <-- fill the fixed height */
+  object-fit: cover;  /* <-- crop sides instead of stretching */
+  flex-shrink: 0;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;  /* Smooth sliding transition */
+}
+
+.slider-image {
+  width: 100%;
+  flex-shrink: 0;  /* Prevent images from shrinking */
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: rgb(124, 90, 38);  /* Semi-transparent white */
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+}
+
+.arrow-left {
+  left: 10px;  /* Position the left arrow */
+}
+
+.arrow-right {
+  right: 10px;  /* Position the right arrow */
+}
+

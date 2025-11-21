@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JAZAMISHI</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <img src="dior.png" class="logo" alt="Logo">
+      <ul class="nav-menu">
+        <li><a href="main.html" class="nav-link active">Home</a></li>
+        <li><a href="findus.html" class="nav-link">Find us</a></li>
+        <li><a href="abtus.html" class="nav-link">About us</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>JAZAMISHI IS HERE TO <br>SAVE YOUR CRAVINGS</h1>
+
+      <p>WE ARE HERE TO SERVE
+     A YUMMY PODCAST THAT’S <br> INTERESTING 
+      AND OFFERS YOU KNOWLEDGE!</p>
+    </div>
+
+    <img src="dior1.png" class="hero-bear1" alt="Bear">
+    
+    <img src="exclaim point.png" class="hero-exclaim" alt="Exclamation">
+
+    <div class="shape-left"></div>
+    <div class="shape-right"></div>
+  </section>
+
+    <!-- JAZAMISHI -->
+<section class="jaza">
+  <div class="jaza-text">
+    <h1>WHAT IS</h1>
+
+    <div class="sec-text">
+      <h1>"JAZAMISHI?"</h1>
+    </div>
+
+    <p>JAZAMISHI IS A PODCAST WITH MUKBANG <br>CREATED AND HOSTED BY GROUP 1. A PLACE
+       <br>WHERE GOOD FOOD MEETS GOOD CONVERSATIONS.<br> 
+ A MIX OF DIFFERENT REACTIONS, HONEST OPINIONS, <br>AND ENTERTAINING DISCUSSIONS THAT FLOW AS
+  <br>NATURALLY AS THE SNACKS ON THE TABLE.</p>
+  </div>
+
+  <div class="purpose-text">
+    <h1>JAZAMISHI'S</h1>
+
+    <div class="purpose-text2">
+      <h1>"PURPOSE"</h1>
+    </div>
+
+<div class="purpose-p">
+        <p>WE INCORPORATED A PODCAST-MUKBANG SETUP. <br>&nbsp;AS WE EXPLORE HOW A CERTAIN PLATFORM 
+CAN<br> INFLUENCE STUDENTS' ATTENTION, SELF-PERCEPTI-<br>&nbsp;&nbsp; ON AND DAILY BEHAVIORS, WE AIM TO DELIVER <br>&nbsp; &nbsp;&nbsp;MEANINGFUL
+           INSIGHTS WHILE MAINTAINING A <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;  RELAXED AND INVITING ATMOSPHERE.</p>
+  </div>
+
+
+<div class="jaza-container"></div>
+<div class="jaza-container1"></div>
+
+<div class="jaza-container2"></div>
+<div class="jaza-container3"></div>
+
+
+
+    <img src="dior1.png" class="hero-bear" alt="Bear">
+
+
+    <div class="shape-left"></div>
+    <div class="shape-right"></div>
+  </section>
+
+<section class="video-section">
+  <h2 class="video-title">PROMOTIONAL VIDEO</h2>
+
+  
+  <div>
+    <video src="jazaza.mp4" class="video" controls></video>
+
+  </div>
+  
+
+
+  <!-- Swirls only -->
+  <img src="swirl.png" class="swirl swirl-1">
+  <img src="swirl.png" class="swirl swirl-2">
+  <img src="swirl.png" class="swirl swirl-3">
+  <img src="swirl.png" class="swirl swirl-4">
+</section>
+
+
+<!-- POSTER SECTION -->
+<section class="poster-section">
+
+  <div class="poster-left">
+    <img src="POSTER.png" class="poster-image" alt="Poster">
+  </div>
+
+  <div class="poster-right">
+    <h2>SET A <br> REMINDER <br> NOW, DON'T <br> MISS IT!</h2>
+  </div>
+  <div class="box"></div>
+
+</section>
+
+
+</body>
+
+<script>
+  const posterSection = document.querySelector('.poster-section');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+        posterSection.classList.add('poster-show');   // play animation
+      } else {
+        posterSection.classList.remove('poster-show'); // reset animation
+      }
+
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(posterSection);
+</script>
+
+<script>
+  const video = document.querySelector('.video');
+
+  video.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  });
+
+  
+</script>
+
+
+</html>
+
