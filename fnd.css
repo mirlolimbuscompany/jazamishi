@@ -1,12 +1,12 @@
 /* FONTS */
 @font-face {
   font-family: 'arch';
-  src: url(fonts/ArchivoBlack-Regular.ttf) format('truetype');
+  src: url(ArchivoBlack-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'arimo';
-  src: url(fonts/Arimo-VariableFont_wght.ttf) format('truetype');
+  src: url(Arimo-VariableFont_wght.ttf) format('truetype');
 }
 
 /* RESET */
@@ -266,5 +266,6 @@ body {
 html {
   scroll-behavior: smooth; /* Enables smooth scrolling */
 }
+
 
 
