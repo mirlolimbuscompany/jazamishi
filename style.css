@@ -1,17 +1,17 @@
 /* FONTS */
 @font-face {
   font-family: 'arch';
-  src: url(fonts/ArchivoBlack-Regular.ttf) format('truetype');
+  src: url(ArchivoBlack-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'arimo';
-  src: url(fonts/Arimo-VariableFont_wght.ttf) format('truetype');
+  src: url(Arimo-VariableFont_wght.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'cute';
-  src: url(fonts/Aurora.otf) format('truetype');
+  src: url(Aurora.otf) format('truetype');
 }
 
 /* RESET */
@@ -469,3 +469,4 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
