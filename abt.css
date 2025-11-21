@@ -1,12 +1,12 @@
 /* FONTS */
 @font-face {
   font-family: 'arch';
-  src: url(fonts/ArchivoBlack-Regular.ttf) format('truetype');
+  src: url(ArchivoBlack-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'arimo';
-  src: url(fonts/Arimo-VariableFont_wght.ttf) format('truetype');
+  src: url(Arimo-VariableFont_wght.ttf) format('truetype');
 }
 
 
@@ -201,4 +201,5 @@ top: 50px;
 .arrow-right {
   right: 10px;  /* Position the right arrow */
 }
+
 
